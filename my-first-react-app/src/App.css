@@ -1,0 +1,91 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Portfolio container */
+.portfolio {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Section styling */
+.portfolio section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.portfolio h2 {
+  color: #282c34;
+  margin-bottom: 0.5rem;
+}
+
+/* Projects list */
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  background: #f1f1f1;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Contact links */
+.contact p {
+  margin: 0.3rem 0;
+}
+/* Animated image */
+.animated-pic1 {
+  width: 200px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.products {
+  margin-top: 2rem;
+}
+
+.product-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.product-card {
+  flex: 1 1 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
